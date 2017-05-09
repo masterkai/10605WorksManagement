@@ -1,0 +1,36 @@
+.works-management {
+  padding: 20px 30px;
+  &__Intellectual-Property-Disclaime {
+    padding: 12px 20px;
+    float: right;
+    font-size: 14px;
+    border: 1px solid #979797;
+    &:hover,focus {
+      background-color: #555555;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &__title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__addingWork {
+    margin-top: 20px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &__Intellectual-Property-Disclaime--p {
+    line-height: 2rem;
+    font-size: 16px;
+  }
+
+}

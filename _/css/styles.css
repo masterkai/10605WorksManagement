@@ -1,0 +1,262 @@
+/* line 5, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 4, ../components/sass/_card.scss */
+.cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 18, ../components/sass/_card.scss */
+.card {
+  position: relative;
+  background: #fefff9;
+  color: #363636;
+  text-decoration: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  @media (max-width: 700px) {
+    /* line 18, ../components/sass/_card.scss */
+    .card {
+      display: flex !important;
+      wflex-wrap: nowrap;
+      flex-direction: row;
+      align-items: stretch;
+      width: 100%;
+      margin-bottom: 20px; } }
+  @media (min-width: 700px) {
+    /* line 18, ../components/sass/_card.scss */
+    .card {
+      width: 202px;
+      height: 260px;
+      margin: 10px; } }
+  @media (min-width: 980px) {
+    /* line 18, ../components/sass/_card.scss */
+    .card {
+      margin: 10px; } }
+  /* line 46, ../components/sass/_card.scss */
+  .card span {
+    display: block; }
+  /* line 49, ../components/sass/_card.scss */
+  .card .card-author {
+    padding: 3% 5% 3% 5%;
+    font-size: 14px; }
+  /* line 53, ../components/sass/_card.scss */
+  .card .card-header {
+    position: relative;
+    height: 145.5px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    background-blend-mode: overlay;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px 0 0; }
+    @media (max-width: 700px) {
+      /* line 53, ../components/sass/_card.scss */
+      .card .card-header {
+        flex-basis: 45%;
+        -moz-border-radius: 4px 0 0 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px 0 0 4px; } }
+    /* line 67, ../components/sass/_card.scss */
+    .card .card-header:hover, .card .card-header:focus {
+      background-color: rgba(255, 255, 255, 0); }
+  /* line 71, ../components/sass/_card.scss */
+  .card .card-title {
+    padding: 3.5% 0 1.5% 0;
+    color: #484848;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    width: 100%; }
+    /* line 80, ../components/sass/_card.scss */
+    .card .card-title h3 {
+      font-size: 16px;
+      line-height: 1.2;
+      padding: 0 5%;
+      margin: 0; }
+  /* line 87, ../components/sass/_card.scss */
+  .card .card-tag {
+    color: #666;
+    font-size: .78em;
+    overflow: hidden;
+    padding: 0 5%; }
+  /* line 93, ../components/sass/_card.scss */
+  .card .card-modify {
+    max-height: 0;
+    overflow: hidden;
+    color: #c9c9c9;
+    font-size: 1em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    padding: 0 5%;
+    -moz-transition-property: max-height;
+    -o-transition-property: max-height;
+    -webkit-transition-property: max-height;
+    transition-property: max-height;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
+    /* line 106, ../components/sass/_card.scss */
+    .card .card-modify:hover {
+      color: #4b4b4b; }
+  /* line 111, ../components/sass/_card.scss */
+  .card:hover, .card:focus {
+    background: white;
+    -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; }
+    /* line 115, ../components/sass/_card.scss */
+    .card:hover .card-modify, .card:focus .card-modify {
+      max-height: 1.125rem; }
+
+/* line 121, ../components/sass/_card.scss */
+img {
+  max-width: 100%; }
+
+/* line 126, ../components/sass/_card.scss */
+body {
+  background: #f0f0f0;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: 'Jaldi', sans-serif; }
+
+/* line 133, ../components/sass/_card.scss */
+* {
+  -moz-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -moz-transform;
+  -o-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -o-transform;
+  -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear; }
+
+/* line 1, ../components/sass/_globe.scss */
+.line {
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 7, ../components/sass/_globe.scss */
+.strong {
+  font-weight: 700; }
+
+/* line 10, ../components/sass/_globe.scss */
+.orange {
+  color: #cf4000; }
+
+/* line 1, ../components/sass/_works-management.scss */
+.works-management {
+  padding: 20px 30px; }
+  /* line 3, ../components/sass/_works-management.scss */
+  .works-management__Intellectual-Property-Disclaime {
+    padding: 12px 20px;
+    float: right;
+    font-size: 14px;
+    border: 1px solid #979797; }
+    /* line 8, ../components/sass/_works-management.scss */
+    .works-management__Intellectual-Property-Disclaime:hover, .works-management__Intellectual-Property-Disclaime focus {
+      background-color: #555555;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer; }
+  /* line 15, ../components/sass/_works-management.scss */
+  .works-management p {
+    font-size: 14px;
+    line-height: 28px; }
+  /* line 19, ../components/sass/_works-management.scss */
+  .works-management__title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  /* line 25, ../components/sass/_works-management.scss */
+  .works-management__addingWork {
+    margin-top: 20px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer; }
+  /* line 31, ../components/sass/_works-management.scss */
+  .works-management__Intellectual-Property-Disclaime--p {
+    line-height: 2rem;
+    font-size: 16px; }
